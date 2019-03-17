@@ -1,1 +1,3 @@
-# sql_injection_algorithm
+# sql-injection-algorithm
+
+For a database course at UMass we used [sqlzoo.net](https://sqlzoo.net/hack/) to investigate the use of SQL injections against databases. While the key takeaway was to sanitize your inputs, I was interested in fetching a list of all the usernames in the database through the server's binary response to whether or not an injected SQL statement returns any rows. I came up with a binary search algorithm that guesses all the usernames within a few hundred requests. There is no practical usage for this script but it is an interesting application of binary search, SQL queries, and using urllib to post to a server.
